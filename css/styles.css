@@ -35,11 +35,26 @@ header {
     align-items: center; /*Vertical*/
     justify-content: space-between; /*Horizontal*/
     grid-area: header;
-    /*display: none;*/
+    height: 130px;
+}
+
+header .navbar {
+    background-color: #75D0DC;
 }
 
 header a {
     color: white;
+}
+
+header .navbar-brand{
+    color: white;
+    font-size: 25px;
+}
+
+header .nav-link {
+    color: white;
+    font-size: 25px;
+    margin: 0px 10px;
 }
 
 header a span {
