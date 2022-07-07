@@ -227,6 +227,15 @@ main.sectionContacto #email {
     margin-top: 100px;
 }
 
+main.sectionContacto .formulario .btn{
+    background-color: #75D0DC;
+    border: 2px solid white;
+    color: black;
+    width: 100px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
 
 /* Main tienda */
 
