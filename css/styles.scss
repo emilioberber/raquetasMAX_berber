@@ -1,3 +1,4 @@
+@import "variablesIndex";
 /* General */
 
 body {
@@ -103,64 +104,52 @@ main.inicio {
     justify-items: center;
     /*display: none;*/
     grid-template-areas: "left right";
+    .right{
+        grid-area: right;
+        img{
+            width: auto;
+            height: 80vh; /*vh=ajustar al height de la pantalla*/
+        }
+    }
+    .left{
+        width: 610px;
+        margin-left: 50px;
+        grid-area: left;
+        h1{
+            font-size: 60px;
+            margin: 0;
+        }
+        p{
+            font-size: 25px;
+            margin: 0;
+            line-height: 28px; /*Interlineado*/ 
+        }
+        .btn{
+            border-radius: 40px;
+            font-size: 22px;
+            width: 218px;
+            text-align: center;
+            line-height: 70px;
+            margin-right: 15px;
+            margin-top: 50px;
+            display: inline-block;
+            transition-duration: 0.5s;
+            &:hover{ /*Animación*/
+                font-size: 24px;
+                box-shadow: 0px 0px 5px $color_primario_boton;
+            }
+        }
+        .btn-primary{
+            background-color: $color_primario_boton;
+            border: 1px solid $color_primario_boton; 
+        }
+        .btn-secondary{
+            color: $color_secundario_boton;
+            border: 2px solid $color_secundario_boton;
+            background-color: transparent;
+        }
+    }
 }
-
-main.inicio .right img {
-    width: auto;
-    height: 80vh; /*vh=ajustar al height de la pantalla*/
-}
-
-main.inicio .left {
-    width: 610px;
-    margin-left: 50px;
-    grid-area: left;
-}
-
-main.inicio .right {
-    grid-area: right;
-}
-
-main.inicio .left h1 {
-    font-size: 60px;
-    margin: 0;
-
-}
-
-main.inicio .left p {
-    font-size: 25px;
-    margin: 0;
-    line-height: 28px; /*Interlineado*/
-}
-
-main.inicio .left .btn {
-    border-radius: 40px;
-    font-size: 22px;
-    width: 218px;
-    text-align: center;
-    line-height: 70px;
-    margin-right: 15px;
-    margin-top: 50px;
-    display: inline-block;
-    transition-duration: 0.5s;
-}
-
-main.inicio .left .btn:hover { /*Animación*/
-    font-size: 24px;
-    box-shadow: 0px 0px 5px black;
-}
-
-main.inicio .left .btn-primary{
-    background-color: black;
-    border: 1px solid black;
-}
-
-
-main.inicio .left .btn-secondary {
-    color: white;
-    border: 2px solid white;
-    background-color: transparent;
-}
-
 
 /* Main contacto */
 

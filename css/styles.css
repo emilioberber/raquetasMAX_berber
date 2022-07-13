@@ -97,33 +97,27 @@ main.inicio {
   /*display: none;*/
   grid-template-areas: "left right";
 }
-
+main.inicio .right {
+  grid-area: right;
+}
 main.inicio .right img {
   width: auto;
   height: 80vh; /*vh=ajustar al height de la pantalla*/
 }
-
 main.inicio .left {
   width: 610px;
   margin-left: 50px;
   grid-area: left;
 }
-
-main.inicio .right {
-  grid-area: right;
-}
-
 main.inicio .left h1 {
   font-size: 60px;
   margin: 0;
 }
-
 main.inicio .left p {
   font-size: 25px;
   margin: 0;
   line-height: 28px; /*Interlineado*/
 }
-
 main.inicio .left .btn {
   border-radius: 40px;
   font-size: 22px;
@@ -135,17 +129,14 @@ main.inicio .left .btn {
   display: inline-block;
   transition-duration: 0.5s;
 }
-
 main.inicio .left .btn:hover { /*Animación*/
   font-size: 24px;
   box-shadow: 0px 0px 5px black;
 }
-
 main.inicio .left .btn-primary {
   background-color: black;
   border: 1px solid black;
 }
-
 main.inicio .left .btn-secondary {
   color: white;
   border: 2px solid white;
