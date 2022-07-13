@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6, .title { /*Fonts style for titles*/
 
 /* header */
 
+
 header {
     display: flex;
     align-items: center; /*Vertical*/
@@ -70,6 +71,29 @@ header a span:hover { /*Animación*/
     opacity: 0.5;
     color: black;
 }
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li {
+    list-style: none; /*Quitar viñetas*/
+    padding: 25px;
+}
+
+header nav ul li a {
+    font-size: 25px;
+    transition-duration: 0.5s;
+}
+
+header nav ul li a:hover { /*Animación*/
+    font-size: 27px;
+    opacity: 0.5;
+    color: black;
+}
+
 
 header nav ul {
     display: flex;
