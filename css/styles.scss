@@ -1,22 +1,6 @@
 @import "variablesIndex";
-/* General */
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #75D0DC;
-    color: white;
-    font-family: 'Source Serif Pro', serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6, .title { /*Fonts style for titles*/
-    font-family: 'Roboto Slab', serif;
-}
-
+@import "maps";
+@import "general";
 
 /* main.inicio.inicio grid */
 #principal {
@@ -53,10 +37,6 @@ header {
                 color: black;
             }
         }
-    } 
-    .navbar-brand{
-        color: white;
-        font-size: 25px
     }
     .nav-link{
         color: white;
@@ -85,7 +65,7 @@ header {
     }
 }
 
-/* main inicio */
+/* main inicio/index */
 
 main.inicio {
     grid-area: main;
@@ -107,11 +87,9 @@ main.inicio {
         margin-left: 50px;
         grid-area: left;
         h1{
-            font-size: 60px;
             margin: 0;
         }
         p{
-            font-size: 25px;
             margin: 0;
             line-height: 28px; /*Interlineado*/ 
         }
@@ -131,10 +109,14 @@ main.inicio {
             }
         }
         .btn-primary{
+            @extend .btn;
             background-color: $color_primario_boton;
             border: 1px solid $color_primario_boton; 
+            color: $color_secundario_boton;
         }
         .btn-secondary{
+            //@extend .btn-primary;
+            @extend .btn;
             color: $color_secundario_boton;
             border: 2px solid $color_secundario_boton;
             background-color: transparent;
@@ -170,9 +152,6 @@ main.sectionContacto{
             height: auto;
         }
     }
-    h3{
-        font-size: 30px;
-    }
     p{
         font-size: 24px;
     }
@@ -192,7 +171,6 @@ main.sectionContacto{
         .btn{
             background-color: #75D0DC;
             border: 2px solid white;
-            color: black;
             width: 100px;
             height: 50px;
             margin: 0px 10px;
@@ -222,7 +200,7 @@ main.tienda{
             }
             td{
                 border: 3px solid black;
-                font-size: 25px;
+                //font-size: 25px;
                 text-align: center;
                 &:last-child{
                     width: 250px;
@@ -265,9 +243,6 @@ main.historia{
             img{
                 width: 100%;
             }
-            h1{
-                font-size: 40px;
-            }
             p{
                 font-size: 20px; 
             }
@@ -291,7 +266,7 @@ main.galeria{
         width: 100%;
     }
     a{
-        font-size: 25px;
+        //font-size: 31px;
         text-align: center;
         text-decoration: none;
         color: white;
@@ -315,7 +290,6 @@ footer{
     background-color: black;
     width: 100%;
     grid-area: footer;
-    /*display: none;*/
     .imgs{
         display: grid;
         grid-template-columns: repeat(3, auto);

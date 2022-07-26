@@ -1,0 +1,16 @@
+
+$generalDesign: (txt1: black, txt2: white);
+
+@each $desgin, $color in $generalDesign {
+    .#{$desgin}{
+        color: $color;
+    }
+}
+
+$fontSizes:(fs1: 25px, fs2: 30px, fs3: 31px, fs4:40px, fs5: 60px);
+
+@each $texto, $size in $fontSizes{
+    .#{$texto}{
+        font-size: $size;
+    }
+}
