@@ -1,5 +1,6 @@
 @import "variablesIndex";
 @import "maps";
+@import "mixin";
 @import "general";
 
 /* main.inicio.inicio grid */
@@ -146,10 +147,6 @@ main.sectionContacto{
             &:hover{
                 opacity: 0.5;
             } 
-        }
-        img {
-            width: 80px;
-            height: auto;
         }
     }
     p{
