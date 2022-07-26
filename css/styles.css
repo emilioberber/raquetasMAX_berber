@@ -1,5 +1,45 @@
 @charset "UTF-8";
-/* General */
+.txt1 {
+  color: black;
+}
+
+.txt2 {
+  color: white;
+}
+
+.fs1 {
+  font-size: 25px;
+}
+
+.fs2 {
+  font-size: 30px;
+}
+
+.fs3 {
+  font-size: 31px;
+}
+
+.fs4 {
+  font-size: 40px;
+}
+
+.fs5 {
+  font-size: 60px;
+}
+
+.botonGet {
+  background-color: black;
+}
+
+.titleBold {
+  font-weight: bold;
+}
+
+.imgSizes {
+  width: 80px;
+  height: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,84 +72,48 @@ header {
   grid-area: header;
   height: 130px;
 }
-
 header .navbar {
   background-color: #75D0DC;
 }
-
 header a {
   color: white;
 }
-
-header .navbar-brand {
-  color: white;
-  font-size: 25px;
-}
-
-header .nav-link {
-  color: white;
-  font-size: 25px;
-  margin: 0px 10px;
-}
-
 header a span {
   padding-left: 25px;
   font-size: 32px;
   font-weight: bold;
   transition-duration: 0.5s;
 }
-
-header a span:hover { /*Animación*/
+header a span:hover {
   font-size: 34px;
   opacity: 0.5;
   color: black;
 }
-
+header .nav-link {
+  color: white;
+  font-size: 25px;
+  margin: 0px 10px;
+}
 header nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 header nav ul li {
   list-style: none; /*Quitar viñetas*/
   padding: 25px;
 }
-
 header nav ul li a {
   font-size: 25px;
   transition-duration: 0.5s;
 }
-
-header nav ul li a:hover { /*Animación*/
+header nav ul li a:hover {
   font-size: 27px;
   opacity: 0.5;
   color: black;
 }
 
-header nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header nav ul li {
-  list-style: none; /*Quitar viñetas*/
-  padding: 25px;
-}
-
-header nav ul li a {
-  font-size: 25px;
-  transition-duration: 0.5s;
-}
-
-header nav ul li a:hover { /*Animación*/
-  font-size: 27px;
-  opacity: 0.5;
-  color: black;
-}
-
-/* main inicio */
+/* main inicio/index */
 main.inicio {
   grid-area: main;
   display: grid;
@@ -132,15 +136,13 @@ main.inicio .left {
   grid-area: left;
 }
 main.inicio .left h1 {
-  font-size: 60px;
   margin: 0;
 }
 main.inicio .left p {
-  font-size: 25px;
   margin: 0;
   line-height: 28px; /*Interlineado*/
 }
-main.inicio .left .btn {
+main.inicio .left .btn, main.inicio .left .btn-primary, main.inicio .left .btn-secondary {
   border-radius: 40px;
   font-size: 22px;
   width: 218px;
@@ -151,13 +153,14 @@ main.inicio .left .btn {
   display: inline-block;
   transition-duration: 0.5s;
 }
-main.inicio .left .btn:hover { /*Animación*/
+main.inicio .left .btn:hover, main.inicio .left .btn-primary:hover, main.inicio .left .btn-secondary:hover { /*Animación*/
   font-size: 24px;
   box-shadow: 0px 0px 5px black;
 }
-main.inicio .left .btn-primary {
+main.inicio .left .btn-primary, main.inicio .left .btn-secondary {
   background-color: black;
   border: 1px solid black;
+  color: white;
 }
 main.inicio .left .btn-secondary {
   color: white;
@@ -172,41 +175,26 @@ main.sectionContacto {
   align-items: center;
   justify-items: center;
 }
-
 main.sectionContacto .fotoContacto {
   width: 80%;
 }
-
 main.sectionContacto .div1Contacto {
   background-color: #D7CF79;
   border-radius: 50px;
   padding: 25px;
   text-align: center;
 }
-
 main.sectionContacto .div1Contacto a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-
 main.sectionContacto .div1Contacto a:hover {
   opacity: 0.5;
 }
-
-main.sectionContacto .div1Contacto img {
-  width: 80px;
-  height: auto;
-}
-
-main.sectionContacto h3 {
-  font-size: 30px;
-}
-
 main.sectionContacto p {
   font-size: 24px;
 }
-
 main.sectionContacto #whatsappTxt {
   font-size: 18px;
   color: black;
@@ -215,33 +203,33 @@ main.sectionContacto #whatsappTxt {
   width: 200px;
   padding: 10px;
 }
-
 main.sectionContacto .formulario {
   margin-top: 140px;
 }
-
 main.sectionContacto .formulario .titulo {
   font-size: 25px;
 }
-
-main.sectionContacto #email {
-  margin-top: 100px;
-}
-
-main.sectionContacto .formulario .btn {
-  background-color: #75D0DC;
-  border: 2px solid white;
-  color: black;
+main.sectionContacto .formulario .btn, main.sectionContacto .formulario main.inicio .left .btn-primary, main.inicio .left main.sectionContacto .formulario .btn-primary, main.sectionContacto .formulario main.inicio .left .btn-secondary, main.inicio .left main.sectionContacto .formulario .btn-secondary {
+  border: 2px solid black;
   width: 100px;
   height: 50px;
   margin: 0px 10px;
+}
+main.sectionContacto .formulario .btn:hover, main.sectionContacto .formulario main.inicio .left .btn-primary:hover, main.inicio .left main.sectionContacto .formulario .btn-primary:hover, main.sectionContacto .formulario main.inicio .left .btn-secondary:hover, main.inicio .left main.sectionContacto .formulario .btn-secondary:hover {
+  background-color: white;
+  color: black;
+}
+main.sectionContacto #email {
+  margin-top: 100px;
 }
 
 /* Main tienda */
 main.tienda {
   width: 100%;
 }
-
+main.tienda h2 {
+  text-align: center;
+}
 main.tienda table {
   width: calc(100% - 40px);
   margin: 20px;
@@ -249,27 +237,25 @@ main.tienda table {
   border-collapse: collapse;
   border: 2px solid #75D0DC;
 }
-
-main.tienda table tr td {
-  border: 3px solid black;
-}
-
-main.tienda table tr:nth-child(1) td {
+main.tienda table tr:nth-child(1) {
   border-top: none;
 }
-
-main.tienda table tr:nth-child(4) td {
+main.tienda table tr:nth-child(4) {
   border-bottom: none;
 }
-
-main.tienda table tr td:nth-child(4) {
-  border-right: none;
+main.tienda table tr td {
+  border: 3px solid black;
+  text-align: center;
 }
-
-main.tienda table tr td:nth-child(1) {
-  border-left: none;
+main.tienda table tr td:last-child {
+  width: 250px;
 }
-
+main.tienda table tr td:first-child {
+  width: 250px;
+}
+main.tienda table tr td a {
+  text-decoration: underline;
+}
 main.tienda table .wrapper-frag {
   width: 150px;
   height: 150px;
@@ -280,27 +266,9 @@ main.tienda table .wrapper-frag {
   border-radius: 50%;
   margin: 15px auto;
 }
-
 main.tienda table .wrapper-frag img {
   height: 100%;
   width: auto;
-}
-
-main.tienda table tr td {
-  font-size: 25px;
-  text-align: center;
-}
-
-main.tienda table tr td a {
-  text-decoration: underline;
-}
-
-main.tienda table tr td:last-child {
-  width: 250px;
-}
-
-main.tienda table tr td:first-child {
-  width: 250px;
 }
 
 /* Main historia */
@@ -308,21 +276,14 @@ main.historia {
   width: calc(100% - 60px);
   margin: 0 30px;
 }
-
 main.historia section {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
 }
-
 main.historia section article img {
   width: 100%;
 }
-
-main.historia section article h1 {
-  font-size: 40px;
-}
-
 main.historia section article p {
   font-size: 20px;
 }
@@ -332,26 +293,17 @@ main.galeria {
   width: calc(100% - 60px);
   margin: 30px;
 }
-
 main.galeria h2 {
   text-align: center;
   margin-bottom: 50px;
 }
-
 main.galeria .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   width: 100%;
 }
-
-main.galeria a img {
-  width: 100%;
-  border-radius: 30px;
-}
-
 main.galeria a {
-  font-size: 25px;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -359,10 +311,13 @@ main.galeria a {
   transition-duration: 0.5s;
   /* opacity: 0.7; */
 }
-
 main.galeria a:hover {
   /* opacity: 1; */
   transform: translateY(-20px);
+}
+main.galeria a img {
+  width: 100%;
+  border-radius: 30px;
 }
 
 /* footer */
@@ -370,31 +325,25 @@ footer {
   background-color: black;
   width: 100%;
   grid-area: footer;
-  /*display: none;*/
 }
-
 footer .imgs {
   display: grid;
   grid-template-columns: repeat(3, auto);
   margin: 0 auto;
   width: 400px;
 }
-
 footer .imgs a {
   text-align: center;
 }
-
 footer .imgs a img {
   width: 60%;
   height: auto;
   margin-top: 20px;
   transition-duration: 0.5s;
 }
-
-footer .imgs a img:hover { /*Animación*/
+footer .imgs a img:hover {
   opacity: 0.5;
 }
-
 footer small {
   text-align: center;
   width: calc(100% - 30px);
@@ -404,15 +353,15 @@ footer small {
 
 /* Responsive - Media Queries */
 @media screen and (max-width: 400px) {
-  main.sectionContacto .div1Contacto img {
+  main.sectionContacto .div1Contacto {
     display: none;
   }
 }
 @media screen and (max-width: 480px) {
-  main.inicio .left .btn.transparente {
+  main.inicio .left .btn.transparente, main.inicio .left .transparente.btn-primary, main.inicio .left .transparente.btn-secondary {
     margin-top: 10px;
   }
-  footer .imgs a img {
+  footer .img a img {
     width: 50%;
   }
   main.galeria a {
@@ -460,11 +409,17 @@ footer small {
   main.tienda table tr:nth-child(4) {
     display: none;
   }
-  main.tienda table tr td:nth-child(2), main.tienda table tr td:nth-child(3), main.tienda table tr td:nth-child(4) {
-    display: none;
-  }
   main.tienda table tr td {
     border: none;
+  }
+  main.tienda table tr td:nth-child(2) {
+    display: none;
+  }
+  main.tienda table tr td:nth-child(3) {
+    display: none;
+  }
+  main.tienda table tr td:nth-child(4) {
+    display: none;
   }
 }
 @media screen and (max-width: 1000px) {

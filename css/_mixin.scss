@@ -1,0 +1,17 @@
+
+@mixin negrita{
+    font-weight: bold;
+}
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
+.titleBold{
+    @include negrita;;
+}
+
+.imgSizes{
+    @include sizes(80px, auto);
+}
