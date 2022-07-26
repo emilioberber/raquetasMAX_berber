@@ -14,3 +14,13 @@ $fontSizes:(fs1: 25px, fs2: 30px, fs3: 31px, fs4:40px, fs5: 60px);
         font-size: $size;
     }
 }
+
+$boton: (
+    colores: black,
+    centro: center,
+    fonts: 35px,
+);
+
+.botonGet{
+    background-color: map-get($map: $boton, $key: colores);
+}

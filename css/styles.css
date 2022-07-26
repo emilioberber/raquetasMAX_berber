@@ -27,6 +27,10 @@
   font-size: 60px;
 }
 
+.botonGet {
+  background-color: black;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -201,11 +205,14 @@ main.sectionContacto .formulario .titulo {
   font-size: 25px;
 }
 main.sectionContacto .formulario .btn, main.sectionContacto .formulario main.inicio .left .btn-primary, main.inicio .left main.sectionContacto .formulario .btn-primary, main.sectionContacto .formulario main.inicio .left .btn-secondary, main.inicio .left main.sectionContacto .formulario .btn-secondary {
-  background-color: #75D0DC;
-  border: 2px solid white;
+  border: 2px solid black;
   width: 100px;
   height: 50px;
   margin: 0px 10px;
+}
+main.sectionContacto .formulario .btn:hover, main.sectionContacto .formulario main.inicio .left .btn-primary:hover, main.inicio .left main.sectionContacto .formulario .btn-primary:hover, main.sectionContacto .formulario main.inicio .left .btn-secondary:hover, main.inicio .left main.sectionContacto .formulario .btn-secondary:hover {
+  background-color: white;
+  color: black;
 }
 main.sectionContacto #email {
   margin-top: 100px;
