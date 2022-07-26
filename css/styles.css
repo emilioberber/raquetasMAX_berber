@@ -227,6 +227,9 @@ main.sectionContacto #email {
 main.tienda {
   width: 100%;
 }
+main.tienda h2 {
+  text-align: center;
+}
 main.tienda table {
   width: calc(100% - 40px);
   margin: 20px;
