@@ -133,7 +133,7 @@ main.inicio .left p {
   margin: 0;
   line-height: 28px; /*Interlineado*/
 }
-main.inicio .left .btn, main.inicio .left .btn-secondary, main.inicio .left .btn-primary {
+main.inicio .left .btn, main.inicio .left .btn-primary, main.inicio .left .btn-secondary {
   border-radius: 40px;
   font-size: 22px;
   width: 218px;
@@ -144,11 +144,11 @@ main.inicio .left .btn, main.inicio .left .btn-secondary, main.inicio .left .btn
   display: inline-block;
   transition-duration: 0.5s;
 }
-main.inicio .left .btn:hover, main.inicio .left .btn-secondary:hover, main.inicio .left .btn-primary:hover { /*Animación*/
+main.inicio .left .btn:hover, main.inicio .left .btn-primary:hover, main.inicio .left .btn-secondary:hover { /*Animación*/
   font-size: 24px;
   box-shadow: 0px 0px 5px black;
 }
-main.inicio .left .btn-primary {
+main.inicio .left .btn-primary, main.inicio .left .btn-secondary {
   background-color: black;
   border: 1px solid black;
   color: white;
