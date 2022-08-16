@@ -286,45 +286,46 @@ main.tienda {
 main.tienda h2 {
   text-align: center;
 }
-main.tienda table {
+main.tienda #tablaTiendas {
   width: calc(100% - 40px);
-  margin: 20px;
+  max-width: 1400px;
+  margin: 50px auto;
   border: none;
   border-collapse: collapse;
   border: 2px solid #75D0DC;
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
 }
-main.tienda table tr:nth-child(1) {
-  border-top: none;
-}
-main.tienda table tr:nth-child(4) {
-  border-bottom: none;
-}
-main.tienda table tr td {
+main.tienda #tablaTiendas article {
   border: 3px solid black;
+  display: block;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-main.tienda table tr td:last-child {
-  width: 250px;
-}
-main.tienda table tr td:first-child {
-  width: 250px;
-}
-main.tienda table tr td a {
+main.tienda #tablaTiendas article a {
   text-decoration: underline;
 }
-main.tienda table .wrapper-frag {
-  width: 150px;
-  height: 150px;
+main.tienda #tablaTiendas .wrapper-frag {
   overflow: hidden;
   display: grid;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   margin: 15px auto;
 }
-main.tienda table .wrapper-frag img {
-  height: 100%;
-  width: auto;
+main.tienda #tablaTiendas .wrapper-frag img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 750px) {
+  main.tienda #tablaTiendas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main.tienda #tablaTiendas article:nth-child(4), main.tienda #tablaTiendas article:nth-child(8), main.tienda #tablaTiendas article:nth-child(12) {
+    margin-bottom: 40px;
+  }
 }
 
 /* Main historia */
