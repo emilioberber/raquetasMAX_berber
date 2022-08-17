@@ -122,6 +122,12 @@ main.raquetas .logosImg img {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 550px) {
+  main.raquetas .logosImg img {
+    width: 90%;
+    height: auto;
+  }
+}
 /* main.inicio.inicio grid */
 #principal {
   width: 100%;
@@ -241,6 +247,9 @@ main.sectionContacto .campo1 {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  padding: 0 50px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 main.sectionContacto .campo1 h1 {
   margin: 25px 0px;
@@ -252,25 +261,30 @@ main.sectionContacto .campo1 p {
 main.sectionContacto .campo1 img {
   height: 300px;
   width: auto;
+  opacity: 0.8;
 }
-main.sectionContacto .campo3 .formulario {
-  border: 2px solid red;
-  margin: 20px 0px;
+main.sectionContacto .formulario {
+  margin: 20px auto;
+  width: 660px;
 }
-main.sectionContacto .campo3 .formulario div {
-  width: 650px;
+main.sectionContacto .formulario p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main.sectionContacto .formulario div {
+  width: 100%;
   height: auto;
-  justify-self: center;
 }
-main.sectionContacto .campo3 .formulario div .btn, main.sectionContacto .campo3 .formulario div main.inicio .left .btn-primary, main.inicio .left main.sectionContacto .campo3 .formulario div .btn-primary, main.sectionContacto .campo3 .formulario div main.inicio .left .btn-secondary, main.inicio .left main.sectionContacto .campo3 .formulario div .btn-secondary {
-  border: 2px solid black;
-  width: 100px;
-  height: 50px;
-  margin: 0px 10px;
+main.sectionContacto .formulario div select, main.sectionContacto .formulario div input:not([type=radio]):not([type=checkbox]) {
+  width: 100%;
 }
-main.sectionContacto .campo3 .formulario div .btn:hover, main.sectionContacto .campo3 .formulario div main.inicio .left .btn-primary:hover, main.inicio .left main.sectionContacto .campo3 .formulario div .btn-primary:hover, main.sectionContacto .campo3 .formulario div main.inicio .left .btn-secondary:hover, main.inicio .left main.sectionContacto .campo3 .formulario div .btn-secondary:hover {
-  background-color: white;
-  color: black;
+main.sectionContacto .formulario div.name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main.sectionContacto .formulario div.name input:not([type=radio]):not([type=checkbox]) {
+  width: 48%;
 }
 main.sectionContacto .campo2 a {
   display: flex;
@@ -288,10 +302,29 @@ main.sectionContacto .campo2 #whatsappTxt {
   width: 200px;
   padding: 10px;
 }
-main.sectionContacto #email {
-  margin-top: 100px;
-}
 
+@media screen and (max-width: 950px) {
+  main.sectionContacto .campo1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  main.sectionContacto .formulario {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main.sectionContacto .campo1 div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main.sectionContacto .campo1 div:nth-child(2) img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
 /* Main tienda */
 main.tienda {
   width: 100%;
@@ -351,8 +384,13 @@ main.historia section {
   grid-template-columns: 50% 50%;
   align-items: center;
 }
+main.historia section article:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 main.historia section article img {
-  height: 500px;
+  height: 900px;
   width: auto;
 }
 main.historia section article p {
