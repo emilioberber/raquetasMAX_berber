@@ -75,8 +75,8 @@ main.raquetas section article.card {
   transition-duration: 0.5s;
 }
 main.raquetas section article.card img {
-  width: 70%;
-  height: auto;
+  height: 280px;
+  width: auto;
   transition-duration: 0.5s;
   margin: 0 auto;
 }
@@ -85,6 +85,16 @@ main.raquetas section article.card:hover {
 }
 main.raquetas section article.card:hover img {
   transform: rotateZ(10deg);
+}
+main.raquetas .logosImg {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+main.raquetas .logosImg img {
+  height: 100px;
+  width: auto;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -184,7 +194,7 @@ main.inicio .right {
 }
 main.inicio .right img {
   width: auto;
-  height: 80vh; /*vh=ajustar al height de la pantalla*/
+  height: 80vh;
 }
 main.inicio .left {
   width: 610px;

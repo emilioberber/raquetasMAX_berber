@@ -20,8 +20,8 @@ main.raquetas {
             transition-duration: 0.5s;
 
             img {
-                width: 70%;
-                height: auto;
+                height: 280px;
+                width: auto;
                 transition-duration: 0.5s;
                 margin: 0 auto;
             }
@@ -34,6 +34,16 @@ main.raquetas {
             }
         }
 
+    }
+    .logosImg{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        img{
+            height: 100px;
+            width: auto;   
+            padding-bottom: 10px;    
+        }
     }
 
 }
