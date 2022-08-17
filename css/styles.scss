@@ -129,52 +129,61 @@ main.inicio {
 /* Main contacto */
 
 main.sectionContacto{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
-    .fotoContacto{
-        width: 80%; 
+    .campo1{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        h1{
+            margin: 25px 0px;
+        }
+        p{
+            font-size: 20px;
+            color: black;
+        }
+        img{
+            height: 300px;
+            width: auto;
+        }
     }
-    .div1Contacto{
-        background-color: #D7CF79;
-        border-radius: 50px;
-        padding: 25px;
-        text-align: center; 
+    .campo3{
+        .formulario{
+            border: 2px solid red;
+            margin: 20px 0px;
+            div{
+                width: 650px;
+                height: auto;
+                justify-self: center;
+                .btn{
+                    border: 2px solid black;
+                    width: 100px;
+                    height: 50px;
+                    margin: 0px 10px;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .campo2{
         a{
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: center;
             &:hover{
                 opacity: 0.5;
             } 
         }
-    }
-    p{
-        font-size: 24px;
-    }
-    #whatsappTxt{
-        font-size: 18px;
-        color: black;
-        border:2px solid black;
-        border-radius: 25px;
-        width: 200px;
-        padding: 10px;
-    }
-    .formulario{
-        margin-top: 140px;
-        .titulo{
-            font-size: 25px;
-        }
-        .btn{
-            border: 2px solid black;
-            width: 100px;
-            height: 50px;
-            margin: 0px 10px;
-            &:hover{
-                background-color: white;
-                color: black;
-            }
+        #whatsappTxt{
+            font-size: 18px;
+            color: black;
+            border:2px solid black;
+            border-radius: 25px;
+            width: 200px;
+            padding: 10px;
         }
     }
     #email{
@@ -244,7 +253,8 @@ main.historia{
         align-items: center;
         article{
             img{
-                width: 100%;
+                height: 500px;
+                width: auto;
             }
             p{
                 font-size: 20px; 

@@ -39,66 +39,90 @@
         </header>
 
         <main class="sectionContacto">
-            <img class="fotoContacto" src="../media/raqueta_babolat_contacto.png" alt="Raqueta Wilson">
-            
-            <div class="div1Contacto">
-                <h3 class="fs2">¿Cómo te podemos ayudar?</h3>
-                
-                <p>Como amantes del deporte, te apoyamos con todas tus preguntas, 
-                Contáctanos.
-                </p>
+            <!--<img class="fotoContacto" src="../media/raqueta_babolat_contacto.png" alt="Raqueta Wilson">-->
+            <div class="campo1">
+                <div>
+                    <h1>¿Cómo te podemos ayudar?</h1>
+                    <p>Como amantes del deporte, te apoyamos con todas tus preguntas, responderemos lo antes posible
+                        para poder lograr que encuentres tu raqueta ideal, así como la disponibilidad de la raqueta de tu interés, contáctanos.
+                    </p>
+                </div>
+                <div>
+                    <img src="../media/pelotas_de_tenis.png" alt="">
+                </div>
+            </div>
+            <!-- Formulario -->
+            <div class="campo3">
+                <form class="formulario" action="#" method="GET" enctype="multipart/form-data">
+                        <h2>Datos personales:</h2>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                            </div>
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                            Mujer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                            Hombre
+                            </label>
+                        </div>
+                        <br>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Marca</option>
+                            <option value="wilson">Wilson</option>
+                            <option value="babolat">Babolat</option>
+                            <option value="yonex">Yonex</option>
+                            <option value="dunlop">Dunlop</option>
+                        </select>
+                        <br>
+                        <form>
+                            <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">No mostraremos tu email a otra persona</div>
+                            </div>
+                            <div class="row g-3 align-items-center">
+                                <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Contraseña:</label>
+                                </div>
+                                <div class="col-auto">
+                                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                </div>
+                                <div class="col-auto">
+                                <span id="passwordHelpInline" class="form-text">
+                                    Debe contener por lo menos de 8-20 carácteres.
+                                </span>
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Mantenme Conectado</label>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-sm txt2 botonGet">Enviar</button>
+                            <button type="reset" class="btn btn-secondary btn-sm txt2 botonGet">Resetear</button>
+                            <p id="email">Email: TennisMAX@gmail.com</p>
+                        </form>
+                </form>
+            </div>
 
+            <div class="campo2">
                 <a href="#" target="_blank">
                     <img class="whatsapp imgSizes" src="../media/whatsapp.svg" alt="Whatsapp">
                 
                     <p id="whatsappTxt">Contáctanos por Whatsapp</p>
                 </a>
             </div>
-
-            <!-- Formulario -->
-            <form class="formulario" action="#" method="GET" enctype="multipart/form-data">
-                <fieldset style="padding: 25px;"> <!--Marquito-->
-                    <legend class="titulo">Información Personal:</legend> <!--Título-->
-                    <br>
-                    <label class="textoFormulario" for="nombre">Nombre:</label>
-                        <input type="text" placeholder="Nombre" required>
-                    <br>
-                    <br>
-                    <label class="textoFormulario" for="apellido">Apellido:</label>
-                        <input type="text" placeholder="Apellido" required>
-                    <br>
-                    <br>
-                    <label class="textoFormulario" for="sexo">Sexo:</label>
-                    <br>
-                    <label class="textoFormulario" for="hombre">Hombre</label>
-                        <input id="hombre" name="sexo" type="radio" value="hombre" required checked>
-                    <label class="textoFormulario" for="mujer">Mujer</label>
-                        <input id="mujer" name="sexo" type="radio" value="mujer" required>
-                    <br>
-                    <br>
-                    <label class="textoFormulario" for="emial">Email:</label>
-                        <input type="email" placeholder="Email" required>
-                    <br>
-                    <br>
-                    <label class="textoFormulario" for="marcas">Marca de interés:</label> <!--combo box-->
-                        <select class="marcasFormulario" name="marcas" id="">
-                            <option value="wilson">Wilson</option>
-                            <option value="babolat">Babolat</option>
-                            <option value="prince">Prince</option>
-                            <option value="head">Head</option>
-                            <option value="lacoste">Lacoste</option>
-                            <option value="yonex">Yonex</option>
-                            <option value="todas">Todas</option>
-                        </select>
-                    
-                    <br>
-                    <br>
-
-                    <button type="button" class="btn btn-primary btn-sm txt2 botonGet">Enviar</button>
-                    <button type="reset" class="btn btn-secondary btn-sm txt2 botonGet">Resetear</button>
-                </fieldset>
-                <p id="email">Email: TennisMAX@gmail.com</p>
-            </form>                
         </main>
     
         <footer>
